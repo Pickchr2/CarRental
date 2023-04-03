@@ -8,8 +8,18 @@ Option Explicit On
 Option Strict On
 
 Class CarRentalForm
+    Sub ExitPrompt()
+        Dim userResponse As Integer
+
+        userResponse = MsgBox("You are about to close the application and lose all saved information. Are you sure you wish to exit?", vbYesNo, "Exit the Application.")
+
+        If userResponse = vbYes Then
+            Me.Close()
+        End If
+    End Sub
+
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click, ExitToolStripMenuItem.Click
-        Me.Close()
+        ExitPrompt()
     End Sub
 
     Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click, ClearToolStripMenuItem.Click
