@@ -82,7 +82,7 @@ Partial Class CarRentalForm
         Me.NameTextBox.Location = New System.Drawing.Point(219, 34)
         Me.NameTextBox.Name = "NameTextBox"
         Me.NameTextBox.Size = New System.Drawing.Size(188, 30)
-        Me.NameTextBox.TabIndex = 0
+        Me.NameTextBox.TabIndex = 1
         Me.CarRentalToolTip.SetToolTip(Me.NameTextBox, "Enter the customer's name.")
         '
         'DaysRentedTextBox
@@ -90,15 +90,15 @@ Partial Class CarRentalForm
         Me.DaysRentedTextBox.Location = New System.Drawing.Point(219, 300)
         Me.DaysRentedTextBox.Name = "DaysRentedTextBox"
         Me.DaysRentedTextBox.Size = New System.Drawing.Size(188, 30)
-        Me.DaysRentedTextBox.TabIndex = 1
-        Me.DaysRentedTextBox.Text = "Enter the total number of days the vehicle was rented."
+        Me.DaysRentedTextBox.TabIndex = 15
+        Me.CarRentalToolTip.SetToolTip(Me.DaysRentedTextBox, "Enter the total number of days the vehicle was rented.")
         '
         'EndingOdometerTextBox
         '
         Me.EndingOdometerTextBox.Location = New System.Drawing.Point(219, 262)
         Me.EndingOdometerTextBox.Name = "EndingOdometerTextBox"
         Me.EndingOdometerTextBox.Size = New System.Drawing.Size(188, 30)
-        Me.EndingOdometerTextBox.TabIndex = 2
+        Me.EndingOdometerTextBox.TabIndex = 13
         Me.CarRentalToolTip.SetToolTip(Me.EndingOdometerTextBox, "Enter the odometer reading at the end of the rental period.")
         '
         'StartingOdometerTextBox
@@ -106,7 +106,7 @@ Partial Class CarRentalForm
         Me.StartingOdometerTextBox.Location = New System.Drawing.Point(219, 224)
         Me.StartingOdometerTextBox.Name = "StartingOdometerTextBox"
         Me.StartingOdometerTextBox.Size = New System.Drawing.Size(188, 30)
-        Me.StartingOdometerTextBox.TabIndex = 3
+        Me.StartingOdometerTextBox.TabIndex = 11
         Me.CarRentalToolTip.SetToolTip(Me.StartingOdometerTextBox, "Enter the odometer reading at the start of the rental period.")
         '
         'ZipTextBox
@@ -114,7 +114,7 @@ Partial Class CarRentalForm
         Me.ZipTextBox.Location = New System.Drawing.Point(219, 186)
         Me.ZipTextBox.Name = "ZipTextBox"
         Me.ZipTextBox.Size = New System.Drawing.Size(188, 30)
-        Me.ZipTextBox.TabIndex = 4
+        Me.ZipTextBox.TabIndex = 9
         Me.CarRentalToolTip.SetToolTip(Me.ZipTextBox, "Enter the customer's zip code.")
         '
         'StateTextBox
@@ -122,7 +122,7 @@ Partial Class CarRentalForm
         Me.StateTextBox.Location = New System.Drawing.Point(219, 148)
         Me.StateTextBox.Name = "StateTextBox"
         Me.StateTextBox.Size = New System.Drawing.Size(188, 30)
-        Me.StateTextBox.TabIndex = 5
+        Me.StateTextBox.TabIndex = 7
         Me.CarRentalToolTip.SetToolTip(Me.StateTextBox, "Enter the customer's state.")
         '
         'CityTextBox
@@ -130,7 +130,7 @@ Partial Class CarRentalForm
         Me.CityTextBox.Location = New System.Drawing.Point(219, 110)
         Me.CityTextBox.Name = "CityTextBox"
         Me.CityTextBox.Size = New System.Drawing.Size(188, 30)
-        Me.CityTextBox.TabIndex = 6
+        Me.CityTextBox.TabIndex = 5
         Me.CarRentalToolTip.SetToolTip(Me.CityTextBox, "Enter the customer's city.")
         '
         'StreetTextBox
@@ -138,7 +138,7 @@ Partial Class CarRentalForm
         Me.StreetTextBox.Location = New System.Drawing.Point(219, 72)
         Me.StreetTextBox.Name = "StreetTextBox"
         Me.StreetTextBox.Size = New System.Drawing.Size(188, 30)
-        Me.StreetTextBox.TabIndex = 7
+        Me.StreetTextBox.TabIndex = 3
         Me.CarRentalToolTip.SetToolTip(Me.StreetTextBox, "Enter the customer'sstreet address.")
         '
         'NameLabel
@@ -148,7 +148,7 @@ Partial Class CarRentalForm
         Me.NameLabel.Location = New System.Drawing.Point(6, 39)
         Me.NameLabel.Name = "NameLabel"
         Me.NameLabel.Size = New System.Drawing.Size(119, 20)
-        Me.NameLabel.TabIndex = 8
+        Me.NameLabel.TabIndex = 0
         Me.NameLabel.Text = "Customer Name:"
         '
         'StreetLabel
@@ -158,7 +158,7 @@ Partial Class CarRentalForm
         Me.StreetLabel.Location = New System.Drawing.Point(6, 77)
         Me.StreetLabel.Name = "StreetLabel"
         Me.StreetLabel.Size = New System.Drawing.Size(108, 20)
-        Me.StreetLabel.TabIndex = 9
+        Me.StreetLabel.TabIndex = 2
         Me.StreetLabel.Text = "Street Address:"
         '
         'CityLabel
@@ -168,7 +168,7 @@ Partial Class CarRentalForm
         Me.CityLabel.Location = New System.Drawing.Point(6, 115)
         Me.CityLabel.Name = "CityLabel"
         Me.CityLabel.Size = New System.Drawing.Size(37, 20)
-        Me.CityLabel.TabIndex = 10
+        Me.CityLabel.TabIndex = 4
         Me.CityLabel.Text = "City:"
         '
         'StateLabel
@@ -178,7 +178,7 @@ Partial Class CarRentalForm
         Me.StateLabel.Location = New System.Drawing.Point(6, 153)
         Me.StateLabel.Name = "StateLabel"
         Me.StateLabel.Size = New System.Drawing.Size(46, 20)
-        Me.StateLabel.TabIndex = 11
+        Me.StateLabel.TabIndex = 6
         Me.StateLabel.Text = "State:"
         '
         'ZipLabel
@@ -188,7 +188,7 @@ Partial Class CarRentalForm
         Me.ZipLabel.Location = New System.Drawing.Point(6, 191)
         Me.ZipLabel.Name = "ZipLabel"
         Me.ZipLabel.Size = New System.Drawing.Size(73, 20)
-        Me.ZipLabel.TabIndex = 12
+        Me.ZipLabel.TabIndex = 8
         Me.ZipLabel.Text = "Zip Code:"
         '
         'StartingOdometerLabel
@@ -198,7 +198,7 @@ Partial Class CarRentalForm
         Me.StartingOdometerLabel.Location = New System.Drawing.Point(6, 229)
         Me.StartingOdometerLabel.Name = "StartingOdometerLabel"
         Me.StartingOdometerLabel.Size = New System.Drawing.Size(195, 20)
-        Me.StartingOdometerLabel.TabIndex = 13
+        Me.StartingOdometerLabel.TabIndex = 10
         Me.StartingOdometerLabel.Text = "Starting Odometer Reading:"
         '
         'EndingOdometerLabel
@@ -208,7 +208,7 @@ Partial Class CarRentalForm
         Me.EndingOdometerLabel.Location = New System.Drawing.Point(6, 267)
         Me.EndingOdometerLabel.Name = "EndingOdometerLabel"
         Me.EndingOdometerLabel.Size = New System.Drawing.Size(189, 20)
-        Me.EndingOdometerLabel.TabIndex = 14
+        Me.EndingOdometerLabel.TabIndex = 12
         Me.EndingOdometerLabel.Text = "Ending Odometer Reading:"
         '
         'DaysLabel
@@ -218,7 +218,7 @@ Partial Class CarRentalForm
         Me.DaysLabel.Location = New System.Drawing.Point(6, 305)
         Me.DaysLabel.Name = "DaysLabel"
         Me.DaysLabel.Size = New System.Drawing.Size(95, 20)
-        Me.DaysLabel.TabIndex = 15
+        Me.DaysLabel.TabIndex = 14
         Me.DaysLabel.Text = "Days Rented:"
         '
         'DiscountsGroupBox
@@ -229,7 +229,7 @@ Partial Class CarRentalForm
         Me.DiscountsGroupBox.Location = New System.Drawing.Point(448, 168)
         Me.DiscountsGroupBox.Name = "DiscountsGroupBox"
         Me.DiscountsGroupBox.Size = New System.Drawing.Size(401, 121)
-        Me.DiscountsGroupBox.TabIndex = 16
+        Me.DiscountsGroupBox.TabIndex = 2
         Me.DiscountsGroupBox.TabStop = False
         Me.DiscountsGroupBox.Text = "Available Customer Discounts"
         '
@@ -266,7 +266,7 @@ Partial Class CarRentalForm
         Me.OdometerTypeGroupBox.Location = New System.Drawing.Point(448, 41)
         Me.OdometerTypeGroupBox.Name = "OdometerTypeGroupBox"
         Me.OdometerTypeGroupBox.Size = New System.Drawing.Size(401, 121)
-        Me.OdometerTypeGroupBox.TabIndex = 17
+        Me.OdometerTypeGroupBox.TabIndex = 1
         Me.OdometerTypeGroupBox.TabStop = False
         Me.OdometerTypeGroupBox.Text = "Is odometer in miles or kilometers?"
         '
@@ -286,6 +286,7 @@ Partial Class CarRentalForm
         'MilesRadioButton
         '
         Me.MilesRadioButton.AutoSize = True
+        Me.MilesRadioButton.Checked = True
         Me.MilesRadioButton.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.MilesRadioButton.Location = New System.Drawing.Point(31, 36)
         Me.MilesRadioButton.Name = "MilesRadioButton"
@@ -318,7 +319,7 @@ Partial Class CarRentalForm
         Me.RentalInfoGroupBox.Location = New System.Drawing.Point(12, 41)
         Me.RentalInfoGroupBox.Name = "RentalInfoGroupBox"
         Me.RentalInfoGroupBox.Size = New System.Drawing.Size(420, 343)
-        Me.RentalInfoGroupBox.TabIndex = 17
+        Me.RentalInfoGroupBox.TabIndex = 0
         Me.RentalInfoGroupBox.TabStop = False
         Me.RentalInfoGroupBox.Text = "Rental Information"
         '
@@ -338,7 +339,7 @@ Partial Class CarRentalForm
         Me.CalculatedTotalGroupBox.Location = New System.Drawing.Point(448, 295)
         Me.CalculatedTotalGroupBox.Name = "CalculatedTotalGroupBox"
         Me.CalculatedTotalGroupBox.Size = New System.Drawing.Size(401, 221)
-        Me.CalculatedTotalGroupBox.TabIndex = 18
+        Me.CalculatedTotalGroupBox.TabIndex = 3
         Me.CalculatedTotalGroupBox.TabStop = False
         Me.CalculatedTotalGroupBox.Text = "Calculated Total"
         '
@@ -349,7 +350,7 @@ Partial Class CarRentalForm
         Me.DistanceDrivenLabel.Location = New System.Drawing.Point(11, 31)
         Me.DistanceDrivenLabel.Name = "DistanceDrivenLabel"
         Me.DistanceDrivenLabel.Size = New System.Drawing.Size(171, 20)
-        Me.DistanceDrivenLabel.TabIndex = 18
+        Me.DistanceDrivenLabel.TabIndex = 0
         Me.DistanceDrivenLabel.Text = "Distance Driven In Miles:"
         '
         'DistanceDrivenTextBox
@@ -358,7 +359,7 @@ Partial Class CarRentalForm
         Me.DistanceDrivenTextBox.Location = New System.Drawing.Point(224, 26)
         Me.DistanceDrivenTextBox.Name = "DistanceDrivenTextBox"
         Me.DistanceDrivenTextBox.Size = New System.Drawing.Size(160, 30)
-        Me.DistanceDrivenTextBox.TabIndex = 13
+        Me.DistanceDrivenTextBox.TabIndex = 1
         '
         'TotalChargeTextBox
         '
@@ -366,7 +367,7 @@ Partial Class CarRentalForm
         Me.TotalChargeTextBox.Location = New System.Drawing.Point(224, 178)
         Me.TotalChargeTextBox.Name = "TotalChargeTextBox"
         Me.TotalChargeTextBox.Size = New System.Drawing.Size(160, 30)
-        Me.TotalChargeTextBox.TabIndex = 14
+        Me.TotalChargeTextBox.TabIndex = 9
         '
         'TotalChargeLabel
         '
@@ -375,7 +376,7 @@ Partial Class CarRentalForm
         Me.TotalChargeLabel.Location = New System.Drawing.Point(11, 183)
         Me.TotalChargeLabel.Name = "TotalChargeLabel"
         Me.TotalChargeLabel.Size = New System.Drawing.Size(96, 20)
-        Me.TotalChargeLabel.TabIndex = 22
+        Me.TotalChargeLabel.TabIndex = 8
         Me.TotalChargeLabel.Text = "Total Charge:"
         '
         'AmountDiscountedTextBox
@@ -384,7 +385,7 @@ Partial Class CarRentalForm
         Me.AmountDiscountedTextBox.Location = New System.Drawing.Point(224, 140)
         Me.AmountDiscountedTextBox.Name = "AmountDiscountedTextBox"
         Me.AmountDiscountedTextBox.Size = New System.Drawing.Size(160, 30)
-        Me.AmountDiscountedTextBox.TabIndex = 15
+        Me.AmountDiscountedTextBox.TabIndex = 7
         '
         'AmountDiscountedLabel
         '
@@ -393,7 +394,7 @@ Partial Class CarRentalForm
         Me.AmountDiscountedLabel.Location = New System.Drawing.Point(11, 145)
         Me.AmountDiscountedLabel.Name = "AmountDiscountedLabel"
         Me.AmountDiscountedLabel.Size = New System.Drawing.Size(144, 20)
-        Me.AmountDiscountedLabel.TabIndex = 21
+        Me.AmountDiscountedLabel.TabIndex = 6
         Me.AmountDiscountedLabel.Text = "Amount Discounted:"
         '
         'DayChargeTextBox
@@ -402,7 +403,7 @@ Partial Class CarRentalForm
         Me.DayChargeTextBox.Location = New System.Drawing.Point(224, 102)
         Me.DayChargeTextBox.Name = "DayChargeTextBox"
         Me.DayChargeTextBox.Size = New System.Drawing.Size(160, 30)
-        Me.DayChargeTextBox.TabIndex = 16
+        Me.DayChargeTextBox.TabIndex = 5
         '
         'DayChargeLabel
         '
@@ -411,7 +412,7 @@ Partial Class CarRentalForm
         Me.DayChargeLabel.Location = New System.Drawing.Point(11, 107)
         Me.DayChargeLabel.Name = "DayChargeLabel"
         Me.DayChargeLabel.Size = New System.Drawing.Size(171, 20)
-        Me.DayChargeLabel.TabIndex = 20
+        Me.DayChargeLabel.TabIndex = 4
         Me.DayChargeLabel.Text = "Charge For Days Rented:"
         '
         'MilageChargeTextBox
@@ -420,7 +421,7 @@ Partial Class CarRentalForm
         Me.MilageChargeTextBox.Location = New System.Drawing.Point(224, 64)
         Me.MilageChargeTextBox.Name = "MilageChargeTextBox"
         Me.MilageChargeTextBox.Size = New System.Drawing.Size(160, 30)
-        Me.MilageChargeTextBox.TabIndex = 17
+        Me.MilageChargeTextBox.TabIndex = 3
         '
         'MilageChargeLabel
         '
@@ -429,7 +430,7 @@ Partial Class CarRentalForm
         Me.MilageChargeLabel.Location = New System.Drawing.Point(11, 69)
         Me.MilageChargeLabel.Name = "MilageChargeLabel"
         Me.MilageChargeLabel.Size = New System.Drawing.Size(109, 20)
-        Me.MilageChargeLabel.TabIndex = 19
+        Me.MilageChargeLabel.TabIndex = 2
         Me.MilageChargeLabel.Text = "Milage Charge:"
         '
         'CalculateButton
@@ -438,8 +439,8 @@ Partial Class CarRentalForm
         Me.CalculateButton.Location = New System.Drawing.Point(12, 390)
         Me.CalculateButton.Name = "CalculateButton"
         Me.CalculateButton.Size = New System.Drawing.Size(201, 55)
-        Me.CalculateButton.TabIndex = 19
-        Me.CalculateButton.Text = "Calculate Total"
+        Me.CalculateButton.TabIndex = 4
+        Me.CalculateButton.Text = "Calculate &Total"
         Me.CarRentalToolTip.SetToolTip(Me.CalculateButton, "Click to Calculate the total charges.")
         Me.CalculateButton.UseVisualStyleBackColor = True
         '
@@ -449,8 +450,8 @@ Partial Class CarRentalForm
         Me.SummaryButton.Location = New System.Drawing.Point(231, 390)
         Me.SummaryButton.Name = "SummaryButton"
         Me.SummaryButton.Size = New System.Drawing.Size(201, 55)
-        Me.SummaryButton.TabIndex = 20
-        Me.SummaryButton.Text = "Detailed Summary"
+        Me.SummaryButton.TabIndex = 5
+        Me.SummaryButton.Text = "Detailed &Summary"
         Me.CarRentalToolTip.SetToolTip(Me.SummaryButton, "Click to print a detailed summary of the total charges.")
         Me.SummaryButton.UseVisualStyleBackColor = True
         '
@@ -460,8 +461,8 @@ Partial Class CarRentalForm
         Me.ExitButton.Location = New System.Drawing.Point(231, 460)
         Me.ExitButton.Name = "ExitButton"
         Me.ExitButton.Size = New System.Drawing.Size(201, 55)
-        Me.ExitButton.TabIndex = 22
-        Me.ExitButton.Text = "Exit"
+        Me.ExitButton.TabIndex = 7
+        Me.ExitButton.Text = "&Exit"
         Me.CarRentalToolTip.SetToolTip(Me.ExitButton, "Click to exit the application.")
         Me.ExitButton.UseVisualStyleBackColor = True
         '
@@ -471,8 +472,8 @@ Partial Class CarRentalForm
         Me.ClearButton.Location = New System.Drawing.Point(12, 460)
         Me.ClearButton.Name = "ClearButton"
         Me.ClearButton.Size = New System.Drawing.Size(201, 55)
-        Me.ClearButton.TabIndex = 21
-        Me.ClearButton.Text = "Clear"
+        Me.ClearButton.TabIndex = 6
+        Me.ClearButton.Text = "&Clear"
         Me.CarRentalToolTip.SetToolTip(Me.ClearButton, "Click to clear all fields.")
         Me.ClearButton.UseVisualStyleBackColor = True
         '
@@ -483,7 +484,7 @@ Partial Class CarRentalForm
         Me.CarRentalMenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.CarRentalMenuStrip.Name = "CarRentalMenuStrip"
         Me.CarRentalMenuStrip.Size = New System.Drawing.Size(866, 28)
-        Me.CarRentalMenuStrip.TabIndex = 23
+        Me.CarRentalMenuStrip.TabIndex = 8
         Me.CarRentalMenuStrip.Text = "MenuStrip1"
         '
         'MenuToolStripMenuItem
@@ -496,25 +497,25 @@ Partial Class CarRentalForm
         'CalculateToolStripMenuItem
         '
         Me.CalculateToolStripMenuItem.Name = "CalculateToolStripMenuItem"
-        Me.CalculateToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CalculateToolStripMenuItem.Size = New System.Drawing.Size(154, 26)
         Me.CalculateToolStripMenuItem.Text = "Calculate"
         '
         'SummaryToolStripMenuItem
         '
         Me.SummaryToolStripMenuItem.Name = "SummaryToolStripMenuItem"
-        Me.SummaryToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.SummaryToolStripMenuItem.Size = New System.Drawing.Size(154, 26)
         Me.SummaryToolStripMenuItem.Text = "Summary"
         '
         'ClearToolStripMenuItem
         '
         Me.ClearToolStripMenuItem.Name = "ClearToolStripMenuItem"
-        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ClearToolStripMenuItem.Size = New System.Drawing.Size(154, 26)
         Me.ClearToolStripMenuItem.Text = "Clear"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(154, 26)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
         'HelpToolStripMenuItem
@@ -527,13 +528,15 @@ Partial Class CarRentalForm
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(133, 26)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'CarRentalForm
         '
+        Me.AcceptButton = Me.CalculateButton
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.ClearButton
         Me.ClientSize = New System.Drawing.Size(866, 528)
         Me.Controls.Add(Me.ExitButton)
         Me.Controls.Add(Me.ClearButton)
