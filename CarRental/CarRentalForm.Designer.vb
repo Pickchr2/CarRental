@@ -79,65 +79,82 @@ Partial Class CarRentalForm
         '
         'NameTextBox
         '
+        Me.NameTextBox.BackColor = System.Drawing.Color.White
+        Me.NameTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.NameTextBox.Location = New System.Drawing.Point(219, 34)
         Me.NameTextBox.Name = "NameTextBox"
-        Me.NameTextBox.Size = New System.Drawing.Size(188, 30)
+        Me.NameTextBox.Size = New System.Drawing.Size(188, 27)
         Me.NameTextBox.TabIndex = 1
         Me.CarRentalToolTip.SetToolTip(Me.NameTextBox, "Enter the customer's name.")
         '
         'DaysRentedTextBox
         '
+        Me.DaysRentedTextBox.BackColor = System.Drawing.Color.White
+        Me.DaysRentedTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.DaysRentedTextBox.Location = New System.Drawing.Point(219, 300)
         Me.DaysRentedTextBox.Name = "DaysRentedTextBox"
-        Me.DaysRentedTextBox.Size = New System.Drawing.Size(188, 30)
+        Me.DaysRentedTextBox.Size = New System.Drawing.Size(188, 27)
         Me.DaysRentedTextBox.TabIndex = 15
         Me.CarRentalToolTip.SetToolTip(Me.DaysRentedTextBox, "Enter the total number of days the vehicle was rented.")
         '
         'EndingOdometerTextBox
         '
+        Me.EndingOdometerTextBox.BackColor = System.Drawing.Color.White
+        Me.EndingOdometerTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.EndingOdometerTextBox.Location = New System.Drawing.Point(219, 262)
         Me.EndingOdometerTextBox.Name = "EndingOdometerTextBox"
-        Me.EndingOdometerTextBox.Size = New System.Drawing.Size(188, 30)
+        Me.EndingOdometerTextBox.Size = New System.Drawing.Size(188, 27)
         Me.EndingOdometerTextBox.TabIndex = 13
         Me.CarRentalToolTip.SetToolTip(Me.EndingOdometerTextBox, "Enter the odometer reading at the end of the rental period.")
         '
         'StartingOdometerTextBox
         '
+        Me.StartingOdometerTextBox.BackColor = System.Drawing.Color.White
+        Me.StartingOdometerTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.StartingOdometerTextBox.Location = New System.Drawing.Point(219, 224)
         Me.StartingOdometerTextBox.Name = "StartingOdometerTextBox"
-        Me.StartingOdometerTextBox.Size = New System.Drawing.Size(188, 30)
+        Me.StartingOdometerTextBox.Size = New System.Drawing.Size(188, 27)
         Me.StartingOdometerTextBox.TabIndex = 11
         Me.CarRentalToolTip.SetToolTip(Me.StartingOdometerTextBox, "Enter the odometer reading at the start of the rental period.")
         '
         'ZipTextBox
         '
+        Me.ZipTextBox.BackColor = System.Drawing.Color.White
+        Me.ZipTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ZipTextBox.Location = New System.Drawing.Point(219, 186)
+        Me.ZipTextBox.MaxLength = 5
         Me.ZipTextBox.Name = "ZipTextBox"
-        Me.ZipTextBox.Size = New System.Drawing.Size(188, 30)
+        Me.ZipTextBox.Size = New System.Drawing.Size(188, 27)
         Me.ZipTextBox.TabIndex = 9
         Me.CarRentalToolTip.SetToolTip(Me.ZipTextBox, "Enter the customer's zip code.")
         '
         'StateTextBox
         '
+        Me.StateTextBox.BackColor = System.Drawing.Color.White
+        Me.StateTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.StateTextBox.Location = New System.Drawing.Point(219, 148)
         Me.StateTextBox.Name = "StateTextBox"
-        Me.StateTextBox.Size = New System.Drawing.Size(188, 30)
+        Me.StateTextBox.Size = New System.Drawing.Size(188, 27)
         Me.StateTextBox.TabIndex = 7
         Me.CarRentalToolTip.SetToolTip(Me.StateTextBox, "Enter the customer's state.")
         '
         'CityTextBox
         '
+        Me.CityTextBox.BackColor = System.Drawing.Color.White
+        Me.CityTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.CityTextBox.Location = New System.Drawing.Point(219, 110)
         Me.CityTextBox.Name = "CityTextBox"
-        Me.CityTextBox.Size = New System.Drawing.Size(188, 30)
+        Me.CityTextBox.Size = New System.Drawing.Size(188, 27)
         Me.CityTextBox.TabIndex = 5
         Me.CarRentalToolTip.SetToolTip(Me.CityTextBox, "Enter the customer's city.")
         '
         'StreetTextBox
         '
+        Me.StreetTextBox.BackColor = System.Drawing.Color.White
+        Me.StreetTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.StreetTextBox.Location = New System.Drawing.Point(219, 72)
         Me.StreetTextBox.Name = "StreetTextBox"
-        Me.StreetTextBox.Size = New System.Drawing.Size(188, 30)
+        Me.StreetTextBox.Size = New System.Drawing.Size(188, 27)
         Me.StreetTextBox.TabIndex = 3
         Me.CarRentalToolTip.SetToolTip(Me.StreetTextBox, "Enter the customer'sstreet address.")
         '
@@ -355,18 +372,22 @@ Partial Class CarRentalForm
         '
         'DistanceDrivenTextBox
         '
+        Me.DistanceDrivenTextBox.BackColor = System.Drawing.Color.White
         Me.DistanceDrivenTextBox.Enabled = False
+        Me.DistanceDrivenTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.DistanceDrivenTextBox.Location = New System.Drawing.Point(224, 26)
         Me.DistanceDrivenTextBox.Name = "DistanceDrivenTextBox"
-        Me.DistanceDrivenTextBox.Size = New System.Drawing.Size(160, 30)
+        Me.DistanceDrivenTextBox.Size = New System.Drawing.Size(160, 27)
         Me.DistanceDrivenTextBox.TabIndex = 1
         '
         'TotalChargeTextBox
         '
+        Me.TotalChargeTextBox.BackColor = System.Drawing.Color.White
         Me.TotalChargeTextBox.Enabled = False
+        Me.TotalChargeTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TotalChargeTextBox.Location = New System.Drawing.Point(224, 178)
         Me.TotalChargeTextBox.Name = "TotalChargeTextBox"
-        Me.TotalChargeTextBox.Size = New System.Drawing.Size(160, 30)
+        Me.TotalChargeTextBox.Size = New System.Drawing.Size(160, 27)
         Me.TotalChargeTextBox.TabIndex = 9
         '
         'TotalChargeLabel
@@ -381,10 +402,12 @@ Partial Class CarRentalForm
         '
         'AmountDiscountedTextBox
         '
+        Me.AmountDiscountedTextBox.BackColor = System.Drawing.Color.White
         Me.AmountDiscountedTextBox.Enabled = False
+        Me.AmountDiscountedTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.AmountDiscountedTextBox.Location = New System.Drawing.Point(224, 140)
         Me.AmountDiscountedTextBox.Name = "AmountDiscountedTextBox"
-        Me.AmountDiscountedTextBox.Size = New System.Drawing.Size(160, 30)
+        Me.AmountDiscountedTextBox.Size = New System.Drawing.Size(160, 27)
         Me.AmountDiscountedTextBox.TabIndex = 7
         '
         'AmountDiscountedLabel
@@ -399,10 +422,12 @@ Partial Class CarRentalForm
         '
         'DayChargeTextBox
         '
+        Me.DayChargeTextBox.BackColor = System.Drawing.Color.White
         Me.DayChargeTextBox.Enabled = False
+        Me.DayChargeTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.DayChargeTextBox.Location = New System.Drawing.Point(224, 102)
         Me.DayChargeTextBox.Name = "DayChargeTextBox"
-        Me.DayChargeTextBox.Size = New System.Drawing.Size(160, 30)
+        Me.DayChargeTextBox.Size = New System.Drawing.Size(160, 27)
         Me.DayChargeTextBox.TabIndex = 5
         '
         'DayChargeLabel
@@ -417,10 +442,12 @@ Partial Class CarRentalForm
         '
         'MilageChargeTextBox
         '
+        Me.MilageChargeTextBox.BackColor = System.Drawing.Color.White
         Me.MilageChargeTextBox.Enabled = False
+        Me.MilageChargeTextBox.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.MilageChargeTextBox.Location = New System.Drawing.Point(224, 64)
         Me.MilageChargeTextBox.Name = "MilageChargeTextBox"
-        Me.MilageChargeTextBox.Size = New System.Drawing.Size(160, 30)
+        Me.MilageChargeTextBox.Size = New System.Drawing.Size(160, 27)
         Me.MilageChargeTextBox.TabIndex = 3
         '
         'MilageChargeLabel
@@ -452,7 +479,7 @@ Partial Class CarRentalForm
         Me.SummaryButton.Size = New System.Drawing.Size(201, 55)
         Me.SummaryButton.TabIndex = 5
         Me.SummaryButton.Text = "Detailed &Summary"
-        Me.CarRentalToolTip.SetToolTip(Me.SummaryButton, "Click to print a detailed summary of the total charges.")
+        Me.CarRentalToolTip.SetToolTip(Me.SummaryButton, "Click to print a detailed summary of the total charges and usage for the day.")
         Me.SummaryButton.UseVisualStyleBackColor = True
         '
         'ExitButton
