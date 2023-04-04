@@ -11,6 +11,9 @@ Class CarRentalForm
     Dim daysRented As Integer
     Dim endingOdometer As Integer
     Dim startingOdometer As Integer
+    Dim totalCustomers As Integer
+    Dim totalMilesSummary As Double
+    Dim totalChargesSummary As Double
 
     Private Sub Calculate()
         Const freeMiles As Integer = 200
@@ -26,7 +29,9 @@ Class CarRentalForm
         Dim totalDiscount As Double
         Dim totalCharge As Double
 
+        totalCustomers += 1
         distanceInMiles = endingOdometer - startingOdometer
+        totalMilesSummary += distanceInMiles
 
         If KilometersRadioButton.Checked Then
             distanceInMiles *= 0.62
@@ -62,6 +67,7 @@ Class CarRentalForm
         AmountDiscountedTextBox.Text = totalDiscount.ToString("C")
         totalCharge -= totalDiscount
         TotalChargeTextBox.Text = totalCharge.ToString("C")
+        totalChargesSummary += totalCharge
     End Sub
 
     Private Function ValidateInput() As Boolean
@@ -234,5 +240,15 @@ Class CarRentalForm
         If inputValidated Then
             Calculate()
         End If
+    End Sub
+
+    Private Sub SummaryButton_Click(sender As Object, e As EventArgs) Handles SummaryButton.Click, SummaryToolStripMenuItem.Click
+        Dim displayTotal As String
+
+        displayTotal = "Total Customers: " & totalCustomers & vbCrLf _
+                       & "Total Miles Driven: " & totalMilesSummary & vbCrLf _
+                       & "Total Charges: " & totalChargesSummary.ToString("C")
+
+        MessageBox.Show(displayTotal, "Detailed Summary of All Transactions.")
     End Sub
 End Class
