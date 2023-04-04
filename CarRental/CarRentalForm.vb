@@ -12,6 +12,58 @@ Class CarRentalForm
     Dim endingOdometer As Integer
     Dim startingOdometer As Integer
 
+    Private Sub Calculate()
+        Const freeMiles As Integer = 200
+        Const dailyCharge As Double = 15.0
+        Const firstMilageCharge As Double = 0.12
+        Const secondMilageCharge As Double = 0.1
+        Const aaaDiscountPercent As Double = 0.05
+        Const seniorDiscountPercent As Double = 0.03
+
+        Dim distanceInMiles As Double
+        Dim milageCharge As Double
+        Dim dayCharge As Double
+        Dim totalDiscount As Double
+        Dim totalCharge As Double
+
+        distanceInMiles = endingOdometer - startingOdometer
+
+        If KilometersRadioButton.Checked Then
+            distanceInMiles *= 0.62
+        End If
+
+        DistanceDrivenTextBox.Text = Math.Round(distanceInMiles, 2).ToString()
+        distanceInMiles -= freeMiles
+
+        If distanceInMiles <= 0 Then
+            milageCharge = 0
+        ElseIf distanceInMiles > 0 And distanceInMiles < 301 Then
+            milageCharge = distanceInMiles * firstMilageCharge
+        Else
+            distanceInMiles -= 300
+            milageCharge = (firstMilageCharge * 300)
+            milageCharge += (distanceInMiles * secondMilageCharge)
+        End If
+
+        MilageChargeTextBox.Text = milageCharge.ToString("C")
+        dayCharge = daysRented * dailyCharge
+        DayChargeTextBox.Text = dayCharge.ToString("C")
+        totalCharge = milageCharge + dayCharge
+
+        If AAACheckBox.Checked Then
+            totalDiscount += aaaDiscountPercent
+        End If
+
+        If SeniorCheckBox.Checked Then
+            totalDiscount += seniorDiscountPercent
+        End If
+
+        totalDiscount *= totalCharge
+        AmountDiscountedTextBox.Text = totalDiscount.ToString("C")
+        totalCharge -= totalDiscount
+        TotalChargeTextBox.Text = totalCharge.ToString("C")
+    End Sub
+
     Private Function ValidateInput() As Boolean
         Dim invalidData As String = ""
 
@@ -178,5 +230,9 @@ Class CarRentalForm
         Dim inputValidated As Boolean
 
         inputValidated = ValidateInput()
+
+        If inputValidated Then
+            Calculate()
+        End If
     End Sub
 End Class

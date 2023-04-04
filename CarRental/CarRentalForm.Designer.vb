@@ -379,6 +379,7 @@ Partial Class CarRentalForm
         Me.DistanceDrivenTextBox.Name = "DistanceDrivenTextBox"
         Me.DistanceDrivenTextBox.Size = New System.Drawing.Size(160, 27)
         Me.DistanceDrivenTextBox.TabIndex = 1
+        Me.DistanceDrivenTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TotalChargeTextBox
         '
@@ -389,6 +390,7 @@ Partial Class CarRentalForm
         Me.TotalChargeTextBox.Name = "TotalChargeTextBox"
         Me.TotalChargeTextBox.Size = New System.Drawing.Size(160, 27)
         Me.TotalChargeTextBox.TabIndex = 9
+        Me.TotalChargeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TotalChargeLabel
         '
@@ -409,6 +411,7 @@ Partial Class CarRentalForm
         Me.AmountDiscountedTextBox.Name = "AmountDiscountedTextBox"
         Me.AmountDiscountedTextBox.Size = New System.Drawing.Size(160, 27)
         Me.AmountDiscountedTextBox.TabIndex = 7
+        Me.AmountDiscountedTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'AmountDiscountedLabel
         '
@@ -429,6 +432,7 @@ Partial Class CarRentalForm
         Me.DayChargeTextBox.Name = "DayChargeTextBox"
         Me.DayChargeTextBox.Size = New System.Drawing.Size(160, 27)
         Me.DayChargeTextBox.TabIndex = 5
+        Me.DayChargeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'DayChargeLabel
         '
@@ -449,6 +453,7 @@ Partial Class CarRentalForm
         Me.MilageChargeTextBox.Name = "MilageChargeTextBox"
         Me.MilageChargeTextBox.Size = New System.Drawing.Size(160, 27)
         Me.MilageChargeTextBox.TabIndex = 3
+        Me.MilageChargeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'MilageChargeLabel
         '
