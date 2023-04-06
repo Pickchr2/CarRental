@@ -239,6 +239,19 @@ Class CarRentalForm
 
         If inputValidated Then
             Calculate()
+            NameTextBox.Clear()
+            StreetTextBox.Clear()
+            CityTextBox.Clear()
+            StateTextBox.Clear()
+            ZipTextBox.Clear()
+            StartingOdometerTextBox.Clear()
+            EndingOdometerTextBox.Clear()
+            DaysRentedTextBox.Clear()
+            AAACheckBox.Checked = False
+            SeniorCheckBox.Checked = False
+            KilometersRadioButton.Checked = False
+            MilesRadioButton.Checked = True
+            NameTextBox.Focus()
         End If
     End Sub
 
