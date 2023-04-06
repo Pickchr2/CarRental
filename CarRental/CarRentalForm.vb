@@ -264,4 +264,14 @@ Class CarRentalForm
 
         MessageBox.Show(displayTotal, "Detailed Summary of All Transactions.")
     End Sub
+
+    Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
+        Dim aboutMessage As String
+
+        aboutMessage = "Enter all customer information into the application, as well as the starting and ending odometer reading along with days rented. " _
+                       & "If any fields are incorrect, please correct all errors before continuing, then the charges will be calculated " _
+                       & "Click the Detailed Summary button to to see the summary of all charges so far."
+
+        MessageBox.Show(aboutMessage, "About.")
+    End Sub
 End Class

@@ -560,7 +560,7 @@ Partial Class CarRentalForm
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(133, 26)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.AboutToolStripMenuItem.Text = "About"
         '
         'CarRentalForm
