@@ -199,37 +199,47 @@ Class CarRentalForm
         End If
     End Sub
 
+    Private Sub ClearPrompt()
+        Dim userResponse As Integer
+
+        userResponse = MsgBox("You are sure you wish to clear all entered information?", vbYesNo, "Clear the Application.")
+
+        If userResponse = vbYes Then
+            NameTextBox.BackColor = Color.White
+            StreetTextBox.BackColor = Color.White
+            CityTextBox.BackColor = Color.White
+            StateTextBox.BackColor = Color.White
+            ZipTextBox.BackColor = Color.White
+            StartingOdometerTextBox.BackColor = Color.White
+            EndingOdometerTextBox.BackColor = Color.White
+            DaysRentedTextBox.BackColor = Color.White
+            NameTextBox.Clear()
+            StreetTextBox.Clear()
+            CityTextBox.Clear()
+            StateTextBox.Clear()
+            ZipTextBox.Clear()
+            StartingOdometerTextBox.Clear()
+            EndingOdometerTextBox.Clear()
+            DaysRentedTextBox.Clear()
+            DistanceDrivenTextBox.Clear()
+            MilageChargeTextBox.Clear()
+            DayChargeTextBox.Clear()
+            AmountDiscountedTextBox.Clear()
+            TotalChargeTextBox.Clear()
+            AAACheckBox.Checked = False
+            SeniorCheckBox.Checked = False
+            KilometersRadioButton.Checked = False
+            MilesRadioButton.Checked = True
+            NameTextBox.Focus()
+        End If
+    End Sub
+
     Private Sub ExitButton_Click(sender As Object, e As EventArgs) Handles ExitButton.Click, ExitToolStripMenuItem.Click
         ExitPrompt()
     End Sub
 
     Private Sub ClearButton_Click(sender As Object, e As EventArgs) Handles ClearButton.Click, ClearToolStripMenuItem.Click
-        NameTextBox.BackColor = Color.White
-        StreetTextBox.BackColor = Color.White
-        CityTextBox.BackColor = Color.White
-        StateTextBox.BackColor = Color.White
-        ZipTextBox.BackColor = Color.White
-        StartingOdometerTextBox.BackColor = Color.White
-        EndingOdometerTextBox.BackColor = Color.White
-        DaysRentedTextBox.BackColor = Color.White
-        NameTextBox.Clear()
-        StreetTextBox.Clear()
-        CityTextBox.Clear()
-        StateTextBox.Clear()
-        ZipTextBox.Clear()
-        StartingOdometerTextBox.Clear()
-        EndingOdometerTextBox.Clear()
-        DaysRentedTextBox.Clear()
-        DistanceDrivenTextBox.Clear()
-        MilageChargeTextBox.Clear()
-        DayChargeTextBox.Clear()
-        AmountDiscountedTextBox.Clear()
-        TotalChargeTextBox.Clear()
-        AAACheckBox.Checked = False
-        SeniorCheckBox.Checked = False
-        KilometersRadioButton.Checked = False
-        MilesRadioButton.Checked = True
-        NameTextBox.Focus()
+        ClearPrompt()
     End Sub
 
     Private Sub CalculateButton_Click(sender As Object, e As EventArgs) Handles CalculateButton.Click, CalculateToolStripMenuItem.Click
