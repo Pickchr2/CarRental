@@ -190,21 +190,21 @@ Class CarRentalForm
     End Function
 
     Private Sub ExitPrompt()
-        Dim userResponse As Integer
+        Dim exitResponse As Integer
 
-        userResponse = MsgBox("You are about to close the application and lose all saved information. Are you sure you wish to exit?", vbYesNo, "Exit the Application.")
+        exitResponse = MsgBox("You are about to close the application and lose all saved information. Are you sure you wish to exit?", vbYesNo, "Exit the Application.")
 
-        If userResponse = vbYes Then
+        If exitResponse = vbYes Then
             Me.Close()
         End If
     End Sub
 
     Private Sub ClearPrompt()
-        Dim userResponse As Integer
+        Dim clearResponse As Integer
 
-        userResponse = MsgBox("You are sure you wish to clear all entered information?", vbYesNo, "Clear the Application.")
+        clearResponse = MsgBox("You are sure you wish to clear all entered information?", vbYesNo, "Clear the Application.")
 
-        If userResponse = vbYes Then
+        If clearResponse = vbYes Then
             NameTextBox.BackColor = Color.White
             StreetTextBox.BackColor = Color.White
             CityTextBox.BackColor = Color.White
